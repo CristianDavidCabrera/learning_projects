@@ -1,4 +1,4 @@
-# learning_projects
+# Learning_projects
 This is a description for the 20h bootcamp in Gran Canaria, in order to practice HTML, CSS and JavaScript development. 
 This project has educational purposes. It contains material owned by Abalab.
 
