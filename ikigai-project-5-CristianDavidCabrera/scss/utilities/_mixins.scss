@@ -1,0 +1,47 @@
+// ======================================
+//  Mixins
+// ======================================
+
+// Create a flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $ali:null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $ali;
+}
+
+@mixin box-nav (
+  $h: null,
+  $w: null,
+  $margin-r:null,
+  $margin-l:null,
+  $margin-t:null,
+  $margin-b:null){
+    height: $h;
+    width: $w;
+    margin-right: $margin-r; 
+    margin-left: $margin-l;
+    margin-top: $margin-t;
+    margin-bottom: $margin-b;
+}
+
+@mixin style-typography (
+  $color:null,
+  $font:null,
+  $size:null,
+  $weight:null,
+  $spacing:null,
+  $ln-height:null){
+    color: $color;
+    font-family:   $font;	
+    font-size: $size;	
+    font-weight: $weight;	
+    letter-spacing: $spacing;	
+    line-height: $ln-height;
+}

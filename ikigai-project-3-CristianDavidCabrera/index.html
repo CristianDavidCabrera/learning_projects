@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project_3</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/CSS" media="screen" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <h1>THE CODE REVIEW</h1>
+    <header>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+    <div class="border-section"></div>
+    <main>
+        <section class="container">
+            <form name="contact-information" action="index.html" method="POST">
+
+                <fieldset class="center">
+                    <legend>
+                        <h3>Contact Information</h3>
+                    </legend>
+
+                    <div class="contact-information">
+                        <div class="input">
+                            <label class="label" for="name">Full Name</label>
+                            <input type="text" id="name" name="user-information" placeholder="Required" autofocus>
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" id="email" name="user-information" placeholder="Required">
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="user-information">
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="address">Street Address</label>
+                            <input type="text" id="address" name="user-information">
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="city">City</label>
+                            <input type="text" id="city" name="user-information">
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="state">State</label>
+                            <select id="state" name="user-state">
+                                <option value="" disabled selected>Choose State</option>
+                                <option value="spain">Spain</option>
+                                <option value="france">France</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="england">England</option>
+                                <option value="ireland">Ireland</option>
+                                <option value="italy">Italy</option>
+                                <option value="morocco">Morocco</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="input">
+                            <label class="label" for="zip-code">Zip Code</label>
+                            <input type="text" id="zip-code" name="user-zip-code">
+                            <br>
+                        </div>
+                    </div>
+                    <hr class="border-bottom">
+                    <br>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        <h3>Newsletter</h3>
+                    </legend>
+
+                    <div class="newsletter">
+                        <p>Select the newsletters you would like to receive</p>
+                        <br>
+
+                        <div class="checkbox">
+                            <div class="space-line">
+                                <input type="checkbox" id="html-news" value="html-newsletter" name="user-news">
+                                <label for="html-news">HTML News</label>
+                                <br>
+                            </div>
+                            <div class="space-line">
+                                <input type="checkbox" id="css-news" value="css-newsletter" name="user-news">
+                                <label for="css-news">CSS News</label>
+                                <br>
+                            </div>
+                            <div class="space-line">
+                                <input type="checkbox" id="js-news" value="js-newsletter" name="user-news">
+                                <label for="js-news">Javascript News</label>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <p>Newsletter format</p>
+                        <br>
+
+                        <div class="radiobuttons">
+                            <div class="space-line">
+                                <input type="radio" id="html-format" value="html-format" name="user-format">
+                                <label for="html-format">HTML</label>
+                                <br>
+                            </div>
+                            <div class="space-line">
+                                <input type="radio" id="plain-text" value="plain-text" name="user-format">
+                                <label for="plain-text">Plain text</label>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="textarea">
+                            <p>Other topics you'd like to heart about</p>
+                            <br>
+                            <textarea name="textarea" id="text-area" cols="30" rows="10"></textarea>
+                            <button class="button-submit" type="submit">Sign Up</button>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+
+</body>
+
+</html>

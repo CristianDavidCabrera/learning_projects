@@ -1,0 +1,54 @@
+//Nav Items
+
+nav {
+    margin:40px 0 0;
+    @include breakpoint(768px) {
+        margin:0;
+    }
+    @include breakpoint(900px) {
+        padding-right: 6rem;
+    }
+    ul {
+        padding:0;
+        margin-top:0;
+        @extend %layout;
+        //media query
+        @include breakpoint(768px) {
+            @include flexy($dir: row);
+        }
+        .nav__item {
+            @include flexy($just: center);
+            margin: 5px 0 5px;
+            @include breakpoint(768px){
+                margin: 0 5px;
+            }
+            a {
+                @extend %style-box;
+                color: $nav-text-color;
+                text-decoration: none;
+                width: 100%;
+                @include breakpoint(768px){
+                    padding: 7px;
+                }
+            }
+            a:hover,
+            a:focus {
+                @extend %style-box;
+                background-color: $secondary-color;
+                color: $white;
+                @include breakpoint(768px){
+                    padding: 7px;
+                }
+            }
+        
+        }
+    }
+}
+
+//Media query
+.grid__col--9 {
+    @include breakpoint(768px) {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    padding: 0 40px;
+    @include breakpoint(768px) {
+        padding:0 90px;
+    }
+}
+
+//tricks to work better //delete when finished.------------------------------------ 
+
+
+// html.debug {
+
+//   background: transparent url(/ikigai-project_4-tonyrm06/mockups/desktop1400px_mockup.png) no-repeat top left; 
+//   background-size: 100%;
+	
+
+// }
+// html.debug 	body {
+//   opacity: 0.7;
+// }  
+
+//tricks to work better------------------------------------------------------------ 

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="debug">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Netflix Clone</title>
+
+    <meta name="description" content="Learning project. Acquire skills to become a front-end developer in the 20h-talent bootcamp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Netflix Clone Search" />
+    <meta property="og:description" content="Learning project" />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124906145-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124906145-1');
+    </script>
+
+</head>
+
+<body class=" container-search">
+    <header class="header_logo">
+        <div class="header_nav">
+            <nav role="navigation">
+
+                <ul class="nav">
+                    <a href="index.html"> <img class="img--logo" src="images/icons/logo-netflix.svg" alt="Netflix logo"></a>
+                    <li class="nav_item--home"><a href="https://www.google.es" target="_blank">Home</a></li>
+                    <li class="nav_item--tv"><a href="https://www.google.es" target="_blank">TV Shows</a></li>
+                    <li class="nav_item--movies"><a href="https://www.google.es" target="_blank">Movies</a></li>
+                    <li class="nav_item--recent-add"><a href="https://www.google.es" target="_blank">Recently Added</a></li>
+                    <li class="nav_item--my-list"><a href="https://www.google.es" target="_blank">My List</a></li>
+
+                    <form action="./search.html" class="img--search">
+
+                        <div class="search-box">
+
+                            <img src="images/icons/lupa.svg" id="lens">
+                            <span class="input-text"><input type="text" name="search" id="search" placeholder="Titles, people, genders"
+                                    autofocus></span>
+
+                        </div>
+
+                    </form>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-search">
+        <div>
+            <h2 class="section-vs">Continue Watching </h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">Trending now</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">Sci-Fi</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">Animation</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">Kids</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">No Name_1</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="section-vs">No Name_2</h2>
+            <div class="carousel-type2">
+
+                <div class="item--1 img-position">
+                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--2 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--3 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--4 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--5 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--6 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+
+                <div class="item--7 img-position">
+                    <a href="./video-detail.html">
+                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
+                    </a>
+
+                    <div class="progress-bar bar-v-search">
+                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <div class="icon--face">
+                <img src="images/icons/facebook-official.svg" alt="facebook">
+            </div>
+            <div class="icon--instag">
+                <img src="images/icons/instagram.svg" alt="instagram">
+            </div>
+            <div class="icon--twitter">
+                <img src="images/icons/twitter.svg" alt="twitter">
+            </div>
+            <div class="icon--youtube">
+                <img src="images/icons/youtube-play.svg" alt="youtube-play">
+            </div>
+        </div>
+        <!-- we must finish linking the sections.-->
+        <div class="links-footer">
+            <ul class="col--1">
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">About this project</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Media Center</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Privacy</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Contact</a></li>
+            </ul>
+            <ul class="col--2">
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Most viewed</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Last Releases</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">My Favorites</a></li>
+            </ul>
+            <ul class="col--3">
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Sci-Fi</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Animation</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Kids</a></li>
+            </ul>
+            <ul class="col--4">
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Trending Now</a></li>
+                <li><a href="https://www.google.es" target="_blank" class="link-footer">Continue Watching</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="copyright">@2018 Netflix inc.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

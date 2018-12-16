@@ -1,0 +1,61 @@
+// ======================================
+//  Mixins
+// ======================================
+
+// Colors
+@mixin btn-color($map) {
+    @each $theme, $color in $map {
+      &--#{$theme} {
+        background-color: $color;
+      }
+    } 
+}
+
+// Create a flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $ali:null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $ali;
+}
+
+//Rounded elements
+@mixin roundy($dim, $brdr:null) {
+    width: $dim;
+    height: $dim;
+    border: $brdr;
+    border-radius: 50%;
+}
+
+//Background buttons and grids
+@mixin btn-color($map) {
+    @each $theme, $color in $map {
+        &--#{$theme}.theme__colors {
+            background-color: $color;
+            @content;
+        }
+    } 
+}
+
+//Calculate Col Width
+@mixin get-width {
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            width: col-width($i);
+            display: flex;
+        }
+   }
+}
+
+//Media queries
+@mixin breakpoint($value) {
+    @media (min-width: $value){
+        @content;
+    }
+}

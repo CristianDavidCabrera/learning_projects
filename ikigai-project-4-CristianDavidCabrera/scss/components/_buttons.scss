@@ -1,0 +1,19 @@
+.btn {
+    @include btn-color($color-button){
+        @extend %style-box;
+        @extend %layout;
+        margin: 15px auto;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include breakpoint(768px) {
+            width: calc(20% - 30px);
+            margin: 15px;
+        }
+    };
+}
+
+button {
+    display: block;
+}
+

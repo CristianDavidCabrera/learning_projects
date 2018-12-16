@@ -1,0 +1,5 @@
+//Grid function
+@function col-width($item) {
+    $one-col: 100% / 12;
+    @return $one-col * $item;
+}

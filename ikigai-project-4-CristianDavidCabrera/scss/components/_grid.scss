@@ -1,0 +1,27 @@
+
+.grid__row{
+    margin: 25px 0;
+    width: 100%;
+    @include flexy(
+        $dir: column
+    );
+    @include breakpoint(768px) {
+        flex-direction: row;
+    }   
+    .grid__col {
+        @include btn-color($color-grid){
+            @extend %style-box;
+            max-width: 100%;
+            margin:3px;
+        };
+        @include breakpoint(768px) {
+            @include get-width;
+        }
+    }
+}
+
+.centered {
+    @include breakpoint(768px) {
+        margin: 0 auto !important;
+    }
+}

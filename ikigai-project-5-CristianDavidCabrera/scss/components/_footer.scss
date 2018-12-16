@@ -1,0 +1,88 @@
+footer {
+  background-color: #141414;
+  @include box-nav(
+    $h: 246px,
+    $w: 860px,
+    $margin-r: 362px,
+    $margin-l: 229px,
+    $margin-t: 119px,
+    $margin-b: 35px
+  );
+  .social-media {
+    width: 191px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul {
+      li {
+        width: 100%;
+        list-style: none;
+        margin-bottom: 15px;
+        margin-right: 65px;
+        margin-left: 5px;
+        color: $font-secondary-color;
+        @extend %style-footer;
+      }
+      a {
+        text-decoration: none;
+        @extend %style-footer;
+      }
+    }
+  }
+  .links-footer:hover {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul {
+      li {
+        width: 100%;
+        list-style: none;
+        margin-bottom: 15px;
+        margin-right: 65px;
+        margin-left: 5px;
+        color: $font-secondary-color;
+        @extend %style-footer;
+        a {
+          text-decoration: underline;
+          @extend %style-footer;
+        }
+      }
+    }
+  }
+
+
+  .col--1 {
+    margin-left: -4px;
+    margin-top: 3px;
+    margin-bottom: 61px;
+  }
+  .col--2 {
+    margin-left: -78px;
+    margin-top: 3px;
+    width: 100px;
+  }
+
+  .col--3 {
+    width: 80px;
+    margin-left: -2px;
+    margin-top: 3px;
+  }
+  .col--4 {
+    width: 128px;
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+
+  .copyright {
+    height: 17px;
+    width: 116px;
+    margin-top: 58px;
+    @extend %style-footer;
+  }
+}

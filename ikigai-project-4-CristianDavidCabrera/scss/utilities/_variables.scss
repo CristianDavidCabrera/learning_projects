@@ -1,0 +1,45 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+
+$white: #fff;
+
+$primary-color: #51ddfc; // teal
+$primary-color-light: lighten($primary-color, 10%);
+$secondary-color: #58e1c1;
+$text-color: #818181;
+$nav-text-color:#5a5a5a;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$font-stack-primary: 'Open Sans', sans-serif;;
+
+//Breakpoints
+$break-s: 768px;
+$brek-m: 769px;
+
+//
+//MAPS
+//
+
+//Buttons
+$color-button: (
+  "default": #51ddfc,
+  "success": #63cc82,
+  "error": #e4757a,
+  "warning": #fd7856,
+  "info": #927bc1,
+);
+
+//Grids
+$color-grid: (
+    '12': #80e8d1,
+    '6': #3fabca,
+    '4': #7ee6fd,
+    '3': #deb2ee,
+    '5': #88d9a0,
+    '7': #ec9fa3,
+    '8': #fd9f85,
+);
