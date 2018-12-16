@@ -5,9 +5,9 @@ This project has educational purposes. It contains material owned by Abalab.
 Description
 In this project, we will learn:
 
-HTML and CSS (section 1)
-JavaScript (section 2)
-React (section 3)
-Github (version control)
-Best practice (readable code)
-Time management. (Agile, Lean, Kanban, Scrum)
+HTML and CSS (section 1).
+JavaScript (section 2).
+React (section 3).
+Github (version control).
+Best practice (readable code).
+Time management. (Agile, Lean, Kanban, Scrum).
