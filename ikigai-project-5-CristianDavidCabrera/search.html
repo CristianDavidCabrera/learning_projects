@@ -1,622 +1,2282 @@
 <!DOCTYPE html>
-<html lang="en" class="debug">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Netflix Clone</title>
-
-    <meta name="description" content="Learning project. Acquire skills to become a front-end developer in the 20h-talent bootcamp." />
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Learning project. Acquire skills to become a front-end developer in the 20h-talent bootcamp."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Netflix Clone Search" />
+    <meta property="og:title" content="Netflix Clone" />
     <meta property="og:description" content="Learning project" />
-    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <meta name="author" content="Cristian David" />
+    <meta
+      property="og:image"
+      content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
+    />
+    <title>Search Netflix Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="no-bg">
+    <nav class="main-nav">
+      <div class="logo-img">
+        <a href="index.html">
+          <img src="icons/netflix-logo.svg" alt="logo-netflix" />
+        </a>
+      </div>
+      <ul class="nav-list">
+        <li class="home"><a class="home" href="#">Home</a></li>
+        <li class="tv-shows"><a class="tv-shows" href="#">TV Shows</a></li>
+        <li class="movies"><a class="movies" href="#">Movies</a></li>
+        <li class="added"><a class="added" href="#">Recently Added</a></li>
+        <li class="my-list"><a class="my-list" href="#">My List</a></li>
+      </ul>
+      <form class="search-form" action="">
+        <label class="search-icon" for="search"> </label>
+        <input
+          id="search"
+          class="search-page-input"
+          type="text"
+          placeholder="Titles, people, genres"
+        />
+      </form>
+    </nav>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124906145-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-124906145-1');
-    </script>
-
-</head>
-
-<body class=" container-search">
-    <header class="header_logo">
-        <div class="header_nav">
-            <nav role="navigation">
-
-                <ul class="nav">
-                    <a href="index.html"> <img class="img--logo" src="images/icons/logo-netflix.svg" alt="Netflix logo"></a>
-                    <li class="nav_item--home"><a href="https://www.google.es" target="_blank">Home</a></li>
-                    <li class="nav_item--tv"><a href="https://www.google.es" target="_blank">TV Shows</a></li>
-                    <li class="nav_item--movies"><a href="https://www.google.es" target="_blank">Movies</a></li>
-                    <li class="nav_item--recent-add"><a href="https://www.google.es" target="_blank">Recently Added</a></li>
-                    <li class="nav_item--my-list"><a href="https://www.google.es" target="_blank">My List</a></li>
-
-                    <form action="./search.html" class="img--search">
-
-                        <div class="search-box">
-
-                            <img src="images/icons/lupa.svg" id="lens">
-                            <span class="input-text"><input type="text" name="search" id="search" placeholder="Titles, people, genders"
-                                    autofocus></span>
-
-                        </div>
-
-                    </form>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main-content-search">
-        <div>
-            <h2 class="section-vs">Continue Watching </h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+    <main class="main-search">
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">Trending now</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">Sci-Fi</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">Animation</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">Kids</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">No Name_1</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
             </div>
-        </div>
-
-        <div>
-            <h2 class="section-vs">No Name_2</h2>
-            <div class="carousel-type2">
-
-                <div class="item--1 img-position">
-                    <a href="./video-detail.html"><img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia"></a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--2 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-modernfamily.svg" alt="Modern Family">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--3 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-rickmorty.svg" alt="Rick and Morty">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--4 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-magichumans.svg" alt="Magic for Humans">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--5 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-cosmos.svg" alt="Cosmos">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--6 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-bfbegonia.svg" alt="Big Fish and Begonia">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
-
-                <div class="item--7 img-position">
-                    <a href="./video-detail.html">
-                        <img src="images/movie-images/movie-square-doctor.svg" alt="Doctor Strange">
-                    </a>
-
-                    <div class="progress-bar bar-v-search">
-                        <img src="images/movie-images/progress-bar.svg" alt="Progres Bar">
-                    </div>
-                </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
             </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-container-search">
+        <div class="movie-h-container">
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/magic-h.svg" alt="magic for humans case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Magic for Humans</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/cosmos-h.svg" alt="Cosmos case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Cosmos</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/rick-h.svg" alt="Rick and Morty case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Rick and Morty</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/big-fish-h.svg" alt="big fish case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Big Fish</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+          <div class="movie-h">
+            <img src="movie-images/modern-h.svg" alt="Modern family case" />
+            <div class="img-overlay-h">
+              <a class="btn-add" href="#">
+                <img
+                  class="btn-add"
+                  src="icons/btn-add.svg"
+                  alt="button add icon"
+                />
+              </a>
+              <a href="detail.html">
+                <img
+                  class="btn-play"
+                  src="icons/btn-play.svg"
+                  alt="btn-play icon"
+                />
+              </a>
+              <h3 class="hover-h-title">Modern Family</h3>
+              <div class="movie-info">
+                <span class="match">98% Match</span>
+                <div class="age-rate-s">13+</div>
+                <span class="time">1h 55m</span>
+              </div>
+              <p class="description-h">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                dolorum porro aut rem adipisci ad, ipsa eaque voluptatum debitis
+                sunt.
+              </p>
+            </div>
+            <div class="progress-bar hide">
+              <div class="progress-status hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-        <div class="social-media">
-            <div class="icon--face">
-                <img src="images/icons/facebook-official.svg" alt="facebook">
-            </div>
-            <div class="icon--instag">
-                <img src="images/icons/instagram.svg" alt="instagram">
-            </div>
-            <div class="icon--twitter">
-                <img src="images/icons/twitter.svg" alt="twitter">
-            </div>
-            <div class="icon--youtube">
-                <img src="images/icons/youtube-play.svg" alt="youtube-play">
-            </div>
+    <footer class="footer-search">
+      <div class="social-media">
+        <div class="facebook">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="icons/facebook-official.svg" alt="facebook icon" />
+          </a>
         </div>
-        <!-- we must finish linking the sections.-->
-        <div class="links-footer">
-            <ul class="col--1">
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">About this project</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Media Center</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Privacy</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Contact</a></li>
-            </ul>
-            <ul class="col--2">
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Most viewed</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Last Releases</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">My Favorites</a></li>
-            </ul>
-            <ul class="col--3">
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Sci-Fi</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Animation</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Kids</a></li>
-            </ul>
-            <ul class="col--4">
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Trending Now</a></li>
-                <li><a href="https://www.google.es" target="_blank" class="link-footer">Continue Watching</a></li>
-            </ul>
+        <div class="instagram">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="icons/instagram.svg" alt="instagram icon" />
+          </a>
         </div>
-        <div>
-            <span class="copyright">@2018 Netflix inc.</span>
+        <div class="twitter">
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="icons/twitter.svg" alt="twitter icon" />
+          </a>
         </div>
-    </footer>
-</body>
+        <div class="youtube">
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="icons/youtube-play.svg" alt="youtube icon" />
+          </a>
+        </div>
+      </div>
 
+      <div class="sections">
+        <div class="section-content">
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >About this project</a
+            ></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Media Center</a
+            ></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank">Privacy</a></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank">Contact</a></span
+          >
+        </div>
+        <div class="section-content">
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Most viewed</a
+            ></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Last Releases</a
+            ></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >My Favourites</a
+            ></span
+          >
+        </div>
+        <div class="section-content">
+          <span
+            ><a href="https://www.google.es/" target="_blank">Sci-Fi</a></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Animation</a
+            ></span
+          >
+          <span><a href="https://www.google.es/" target="_blank">Kids</a></span>
+        </div>
+        <div class="section-content">
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Trending Now</a
+            ></span
+          >
+          <span
+            ><a href="https://www.google.es/" target="_blank"
+              >Continue Watching</a
+            ></span
+          >
+        </div>
+      </div>
+
+      <span class="netflix-inc">&copy; 2018 Netflix inc.</span>
+    </footer>
+  </body>
 </html>

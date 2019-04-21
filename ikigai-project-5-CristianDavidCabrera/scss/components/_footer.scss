@@ -1,88 +1,47 @@
 footer {
-  background-color: #141414;
-  @include box-nav(
-    $h: 246px,
-    $w: 860px,
-    $margin-r: 362px,
-    $margin-l: 229px,
-    $margin-t: 119px,
-    $margin-b: 35px
-  );
-  .social-media {
-    width: 191px;
+	height: 246px;
+    width: 849px;
+    margin: 135px 362px 35px 229px;
     display: flex;
-    justify-content: space-between;
-  }
-  .links-footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    ul {
-      li {
-        width: 100%;
-        list-style: none;
-        margin-bottom: 15px;
-        margin-right: 65px;
-        margin-left: 5px;
-        color: $font-secondary-color;
-        @extend %style-footer;
-      }
-      a {
-        text-decoration: none;
-        @extend %style-footer;
-      }
+    flex-direction: column;
+    .social-media {
+        width: 191px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-  }
-  .links-footer:hover {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    ul {
-      li {
-        width: 100%;
-        list-style: none;
-        margin-bottom: 15px;
-        margin-right: 65px;
-        margin-left: 5px;
-        color: $font-secondary-color;
-        @extend %style-footer;
-        a {
-          text-decoration: underline;
-          @extend %style-footer;
+    .sections {
+        width: 849px;
+        margin: 17px 0 77px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-bottom: 13px;
+                a {
+                    color: $footer-text;
+                    font-size: 13px;
+                    letter-spacing: 0.25px;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
         }
-      }
     }
-  }
+}
 
+.netflix-inc {
+    color: $footer-text;
+	font-size: 14px;
+	letter-spacing: 0.11px;
+	line-height: 17px;
+}
 
-  .col--1 {
-    margin-left: -4px;
-    margin-top: 3px;
-    margin-bottom: 61px;
-  }
-  .col--2 {
-    margin-left: -78px;
-    margin-top: 3px;
-    width: 100px;
-  }
-
-  .col--3 {
-    width: 80px;
-    margin-left: -2px;
-    margin-top: 3px;
-  }
-  .col--4 {
-    width: 128px;
-    margin-left: 20px;
-    margin-top: 3px;
-  }
-
-  .copyright {
-    height: 17px;
-    width: 116px;
-    margin-top: 58px;
-    @extend %style-footer;
-  }
+//SEARCH
+.footer-search {
+    margin: 142px 362px 35px 229px;
 }

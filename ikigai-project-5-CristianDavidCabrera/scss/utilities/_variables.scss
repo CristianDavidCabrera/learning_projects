@@ -1,28 +1,14 @@
-// ======================================
-//  Variables
-// ======================================
+//Colors
+$primary-color: #FFFFFF;
+$secondary-color: #000000;
+$age-rate-color:#252928;
+$btn-header-bg: rgba(51,51,51,0.4);
+$hover-btn-header-bg: #E6E6E6;
+$nav-bg: #141414;
+$progress-bar: #606060;
+$progress-status:#B3212C;
+$footer-text: #7F7F7F;
+$match: #46D36A;
 
-// Colors
-
-$white: #fff;
-$font-primary-color:#fff;
-$primary-color:  #141414;
-$font-secondary-color:#7F7F7F;	
-$font-type: Helvetica;
-$buttons-color:rgba(51,51,51,0.4);
-
-// ======================================
-//  Maps
-// ======================================
-
-//Map Images
-
-// $image: (
-//   "--1": "movie-square-bfbegonia.svg",
-//   "--2": "movie-square-modernfamily.svg",
-//   "--3": "movie-square-rickmorty.svg",
-//   "--4": "movie-square-magichumans.svg",
-//   "--5": "movie-square-cosmos.svg",
-//   "--6": "movie-square-bfbegonia.svg",
-//   "--7": "movie-square-desencant-sh.svg"
-// );
+//Font Family
+$primary-font: Helvetica, sans-serif;

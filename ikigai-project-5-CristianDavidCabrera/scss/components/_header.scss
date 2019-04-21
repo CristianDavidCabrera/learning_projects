@@ -1,258 +1,77 @@
-// ======================================
-// Menu. Synopsys Movie. Buttons Play and List. Display age.
-// ======================================
-
-.content-movie {
-  height: 810.44px;
-  width: 1440px;
-  display: inline-block;
-  // -webkit-appearance: none;
-  
-}
-.main-content-search{
-  margin-top: 109px;
-}
-
-.container-search {
-  height: 1948px;
-  width: 1440px;
-  background-color: $primary-color;
-}
-
-.container {
-  height: 2572px;
-  width: 100%;
-  background-color: $primary-color;
-  position: relative;
-  
-    .age-label {
-        position: absolute;
-        top: 505px;
-        right: 1px;
-        height: 32px;	
-        width: 95px;	
-
-        padding-left: 15px;
-        padding-top: 8px;
-        border-left: 2px solid white;
-        background-color: #252928;
-    
-        color: $font-primary-color;
-        font-family: Helvetica;	
-        font-size: 16px;	
-        font-weight: bold;	
-        letter-spacing: 0.16px;	
-        line-height: 19px;
-         
+.container-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 184px;
+    margin-left: 58px;
+    .movie-title {
+        width: 459px;
+        margin-left: 3px;
     }
-}
-// container of title-movie, play and Mylist buttons and synopsis menu and age label.
-.secondary-container {
-  height: 74.31px;
-  width: 459.12px;
-  margin-left: 61px;
-  margin-top: -561px;
-  overflow: visible;
-}
+    .btn-header {
+        margin-top: 30px;
+        margin-bottom: 27px;
+        .btn-play, .btn-list {
+            color: $primary-color;
+            padding:12px 35px 11px 34px;
+            border-radius: 3px;
+            background-color: $btn-header-bg;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.2px;
+            .play-icon-black, .plus-icon-black {
+                display: none;
+            }
+        }
+        .btn-play:hover, .btn-list:hover {
+            background-color: $hover-btn-header-bg;
+            color: $secondary-color;
+            .play-icon, .plus-icon {
+                display: none;
+            }
+            .plus-icon-black {
+                display: initial;
+                margin-right: 6px;
+            }
+            .play-icon-black {
+                display: initial;
+                margin-right: 7px;
+            }
 
-h2 {
-  color: $white;
-}
-h3 {
-  height: 26px;
-  width: 230px;
-  color: $font-primary-color;
-  font-family: $font-type;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.22px;
-  line-height: 26px;
-  margin-top: 14px;
-  margin-left: -4px;
-}
-p {
-  height: 75px;
-  width: 485px;
-  color: $font-primary-color;
-  font-family: $font-type;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  line-height: 25px;
-  margin-left: -2px;
-}
-
-
-// ======================================
-// BUTTONS 
-// ======================================
-
-.button {
- 
-    // -webkit-appearance: none;
-    // /*  resetear la apariencia de los botones  */
-
-  &--play {
-    display: inline-block;
-    height: 41px;
-    width: 130px;
-    border-radius: 3px;
-    background-color: $buttons-color;
-    // #black--play {
-    //   display: none;
-    // }
-    // #white--play {
-    //   display: visible;
-    // } 
-    button {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 32px;
-      background: transparent;
-      border: none;
-      outline: none;
-      // border-style: none;
+        }
+        .btn-play {
+            margin-right: 8px;
+        }
+        .play-icon {
+            margin-right: 7px;
+        }
+        .plus-icon {
+            margin-right: 6px;
+        }
     }
-    .play-text {
-      color: $font-primary-color;
-      font-family: $font-type;
-      font-size: 16px;	
-      letter-spacing: 0.2px;	
-      line-height: 19px;
-      @include box-nav(
-        $h: 19px,
-        $w: 30px,
-        $margin-r: 36px,
-        $margin-l: 5px,
-        $margin-t: 10px,
-        $margin-b: 12px
-      );
+    .subtitle-movie {
+        height: 26px;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.22px;
+        line-height: 26px;
     }
-  }
-
-  &--play:hover {
-    display: inline-block;
-    height: 41px;
-    width: 130px;
-    border-radius: 3px;
-    background-color: #E6E6E6;
-   
-    // #black--play {
-    //   display: visible;
-    // }
-    // #white--play {
-    //   display: none;
-    // }
-
-    button {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 32px;
-      background-color: #E6E6E6;
-      // background: transparent;
-      border: none;
-      outline: none;
+    .description-movie {
+        height: 75px;
+        width: 485px;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+        margin-top: 3px;
     }
-    .play-text {
-      // color: $font-primary-color;
-      color:black;
-      font-family: $font-type;
-      font-size: 16px;	
-      letter-spacing: 0.2px;	
-      line-height: 19px;
-      @include box-nav(
-        $h: 19px,
-        $w: 30px,
-        $margin-r: 36px,
-        $margin-l: 5px,
-        $margin-t: 10px,
-        $margin-b: 12px
-      );
+    .age-rate {
+        align-self: flex-end;
+        padding: 7px 51px 6px 13px;
+        border-left: 3px solid $primary-color;
+        background-color: $age-rate-color;
+        margin-top: -13px;   
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.16px;
     }
-  }
-
-  &--list {
-    display: inline-block;
-    height: 41px;
-    width: 154px;
-    border-radius: 3px;
-    background-color: $buttons-color;
-
-    // #black--plus {
-    //   display: none;
-    // }
-    // #white--plus {
-    //   display: visible;
-     
-    // }
-
-    button {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 40px;
-      background: transparent;
-      border: none;
-      outline: none;
-      // border-style: none;
-    }
-    .list-text {
-      color:$font-primary-color;
-      font-family: $font-type;
-      font-size: 16px;	
-      letter-spacing: 0.2px;	
-      line-height: 19px;
-      margin-left:2px;
-      @include box-nav(
-        $h: 19px,
-        $w: 57px,
-        $margin-r: 36px,
-        $margin-l: 5px,
-        $margin-t: 10px,
-        $margin-b: 12px
-      );
-    }
-  }
-
-  &--list:hover {
-    display: inline-block;
-    height: 41px;
-    width: 154px;
-    border-radius: 3px;
-    background-color: #E6E6E6;
-
-    // #black--plus {
-    //   display: visible;
-    // }
-    // #white--plus {
-    //   display: none;
-    // }
-    button {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 40px;
-      // background: transparent;
-     
-      border: none;
-      outline: none;
-      // border-style: none;
-    }
-    .list-text {
-      color:black;
-      font-family: $font-type;
-      font-size: 16px;	
-      letter-spacing: 0.2px;	
-      line-height: 19px;
-      margin-left:2px;
-      @include box-nav(
-        $h: 19px,
-        $w: 57px,
-        $margin-r: 36px,
-        $margin-l: 5px,
-        $margin-t: 10px,
-        $margin-b: 12px
-      );
-    }
-  }
-
- 
 }
